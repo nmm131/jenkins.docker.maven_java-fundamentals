@@ -5,6 +5,6 @@ package com.github.curriculeon;
  */
 public class CurriculeonRocks {
     public static void main(String[] args) {
-//         System.out.println("Curriculeon Rocks!");
+         System.out.println("Curriculeon Rocks!");
     }
 }
