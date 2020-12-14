@@ -6,15 +6,6 @@ pipeline {
         }
     }
     stages {
-		stage('build') {
-			environment {
-				HOME="."
-			}
-			steps {
-				sh 'mvn --version'
-			}
-		}
-	}
         stage('SCM Checkout') {
             steps {
                 sh 'git clone https://github.com/nmm131/jenkins.docker.maven_java-fundamentals'
