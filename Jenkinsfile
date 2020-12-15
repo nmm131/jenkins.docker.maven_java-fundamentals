@@ -9,8 +9,7 @@ pipeline {
         stage('SCM Checkout') {
             steps {
 				script {
-					//sh 'git clone https://github.com/nmm131/jenkins.docker.maven_java-fundamentals'
-					echo "This is a test...deployment successful"
+					sh 'git clone https://github.com/nmm131/jenkins.docker.maven_java-fundamentals'
 				}
             }
         }
@@ -19,8 +18,7 @@ pipeline {
             steps {
 				script {
 					def mvnHome = tool name: 'maven-3', type: 'maven'	
-					//sh "${mvnHome}/bin/mvn/package"
-					echo "This is a test...deployment successful"
+					sh "${mvnHome}/bin/mvn/package"
 				}
             }
         }
